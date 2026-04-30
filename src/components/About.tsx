@@ -43,7 +43,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-lg leading-8 text-neutral-400">
-            I’m Gregory Schuman, a technology-focused professional interested in
+            I am Greg Schuman, a technology-focused professional interested in
             IT support, technical documentation, networking, and system
             troubleshooting. I enjoy turning complex technical problems into
             clear, practical solutions that improve reliability and user
