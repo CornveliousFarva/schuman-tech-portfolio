@@ -19,7 +19,7 @@ export default function LogoSelector({
       {variant === "full" && (
         <div className="leading-tight">
           <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">
-            Gregory Schuman™
+            Greg Schuman™
           </p>
 
           <p className="text-sm text-neutral-300 transition group-hover:text-white">
