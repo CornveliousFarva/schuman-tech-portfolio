@@ -1,10 +1,5 @@
-function App() {
-  return (
-    <>
-      <h1>Schuman Security Documentation</h1>
-      <p>Clear Systems. Stronger Security.</p>
-    </>
-  );
-}
+import PortfolioPage from "./pages/PortfolioPage";
 
-export default App;
+export default function App() {
+  return <PortfolioPage />;
+}
