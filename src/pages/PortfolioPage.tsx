@@ -5,6 +5,7 @@ export default function PortfolioPage() {
 }
 
 // The below code is for future expansion of the Portfolio page, but for now the Portfolio component is being rendered directly for simplicity and focus on the projects themselves.
+
 // import Navbar from "../components/Navbar";
 // import Footer from "../components/Footer";
 
