@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "./Button";
 import { Shield } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
