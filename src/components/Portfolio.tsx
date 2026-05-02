@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
-import HeroSection from "./HeroSection";
-import AboutSection from "./AboutSection";
-import ContactSection from "./ContactSection";
+import HeroSection from "./Hero";
+import AboutSection from "./About";
+import ContactSection from "./Contact";
 import Footer from "./Footer";
 
 export default function Portfolio() {
