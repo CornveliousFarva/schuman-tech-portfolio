@@ -11,7 +11,7 @@ export const portfolioData = {
     intro:
       "Technology-focused professional interested in IT support, documentation, networking, and system troubleshooting.",
     philosophy:
-      "I believe technology should reduce friction, not create it. My goal is to build systems that are understandable, maintainable, and useful.",
+      "I believe technology should reduce friction, not create it. My goal is to build systems that are understandable, maintainable, and useful. I focus on clear communication, practical solutions, and user-centered design to make technology work for people, not the other way around. Afer all, behind the code and systems are real people who need reliable support and documentation to succeed.",
   },
 
   skills: [
