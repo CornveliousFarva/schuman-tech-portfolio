@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
-import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
