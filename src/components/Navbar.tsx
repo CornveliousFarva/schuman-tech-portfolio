@@ -1,68 +1,51 @@
-import Button from "./Button";
-import { Shield } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+import { Link } from "react-router-dom";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
+  const theme = useTheme();
+
+  function toggleTheme(): void {
+    theme.toggle();
+  }
+
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        
-        {/* Brand */}
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-2xl border border-slate-700 bg-slate-900">
-            <Shield className="w-6 h-6 text-sky-400" />
-          </div>
+    <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link
+          to="/"
+          className="font-bold text-slate-900 dark:text-white"
+        >
+          Schuman Security Documentation
+        </Link>
 
-          <div>
-            <h1 className="text-lg font-semibold tracking-tight">
-              Schuman Security Documentation
-            </h1>
-            <p className="text-sm text-slate-400">
-              Clear Systems. Stronger Security.
-            </p>
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          <a
-            href="#services"
-            className="text-sm text-slate-300 hover:text-sky-400 transition"
-          >
+        <div className="flex items-center gap-5 text-sm">
+          <a href="/#services" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
             Services
           </a>
 
-          <a
-            href="#portfolio"
-            className="text-sm text-slate-300 hover:text-sky-400 transition"
-          >
-            Portfolio
-          </a>
-
-          <a
-            href="#about"
-            className="text-sm text-slate-300 hover:text-sky-400 transition"
-          >
+          <a href="/#about" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
             About
           </a>
 
-          <a
-            href="#contact"
-            className="text-sm text-slate-300 hover:text-sky-400 transition"
-          >
+          <Link to="/portfolio" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
+            Portfolio
+          </Link>
+
+          <a href="/#contact" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
             Contact
           </a>
-        </nav>
 
-        {/* Right Side Actions */}
-        <div className="flex items-center gap-3">
-          <ThemeToggle />
-
-          <Button className="rounded-2xl px-5">
-            Resume
-          </Button>
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="rounded-md border border-slate-300 p-2 text-slate-900 dark:border-slate-700 dark:text-white"
+            aria-label="Toggle dark mode"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }
