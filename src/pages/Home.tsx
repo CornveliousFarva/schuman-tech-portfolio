@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
@@ -11,12 +13,12 @@ export default function Home() {
       </p>
 
       <div className="mt-8">
-        <a
-          href="/portfolio"
+        <Link
+          to="/portfolio"
           className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700 transition"
         >
           View Portfolio
-        </a>
+        </Link>
       </div>
     </section>
   );
