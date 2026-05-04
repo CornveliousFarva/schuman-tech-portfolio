@@ -1,41 +1,62 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
+  const navigate = useNavigate();
+
+  const scrollToSection = (id: string) => {
+    navigate("/");
+
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
 
   return (
-    <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+    <header className="sticky top-0 z-50 border-b border-emerald-500/20 bg-slate-950 text-white shadow-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
           to="/"
-          className="font-bold text-slate-900 dark:text-white"
+          className="text-lg font-bold text-emerald-400 hover:text-emerald-300"
         >
           Schuman Security Documentation
         </Link>
 
         <div className="flex items-center gap-5 text-sm">
-          <a href="/#services" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
+          <button
+            onClick={() => scrollToSection("services")}
+            className="text-slate-200 hover:text-emerald-400"
+          >
             Services
-          </a>
+          </button>
 
-          <a href="/#about" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
+          <button
+            onClick={() => scrollToSection("about")}
+            className="text-slate-200 hover:text-emerald-400"
+          >
             About
-          </a>
+          </button>
 
-          <Link to="/portfolio" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
+          <Link
+            to="/portfolio"
+            className="text-slate-200 hover:text-emerald-400"
+          >
             Portfolio
           </Link>
 
-          <a href="/#contact" className="text-slate-700 hover:text-emerald-600 dark:text-slate-300">
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="text-slate-200 hover:text-emerald-400"
+          >
             Contact
-          </a>
+          </button>
 
           <button
             type="button"
             onClick={toggleTheme}
-            className="rounded-md border border-slate-300 p-2 text-slate-900 dark:border-slate-700 dark:text-white"
+            className="rounded-md border border-emerald-500/40 p-2 text-emerald-400 hover:bg-emerald-500/10"
             aria-label="Toggle dark mode"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
