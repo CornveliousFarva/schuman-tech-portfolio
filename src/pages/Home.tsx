@@ -1,28 +1,23 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Services from "../components/Services";
-import Portfolio from "../components/Portfolio";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-        {/* Navigation */}
-      <Navbar />
-         {/* Hero Section */}
-      <Hero />
-    {/* Services Section */}
-      <Services />
-      {/* Portfolio Section */}
-      <Portfolio />
-      {/* About Section */}
-      <About />
-      {/* Contact Section */}
-      <Contact />
-      {/* Footer */}
-      <Footer />
-    </main>
+    <section className="mx-auto max-w-6xl px-6 py-16">
+      <h1 className="text-4xl font-bold mb-4">
+        Schuman Security Documentation
+      </h1>
+
+      <p className="text-lg text-slate-600 dark:text-slate-400">
+        Welcome to my portfolio. I focus on cybersecurity, documentation, and
+        building secure, scalable systems.
+      </p>
+
+      <div className="mt-8">
+        <a
+          href="/portfolio"
+          className="inline-block rounded-md bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700 transition"
+        >
+          View Portfolio
+        </a>
+      </div>
+    </section>
   );
 }
