@@ -3,11 +3,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
-  const theme = useTheme();
-
-  function toggleTheme(): void {
-    theme.toggle();
-  }
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
