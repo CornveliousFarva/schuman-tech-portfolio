@@ -7,19 +7,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-white">
-        <Navbar />
+  <Navbar />
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
-        </main>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/portfolio" element={<Portfolio />} />
+  </Routes>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+  <Footer />
+</BrowserRouter>
   );
 }
 
