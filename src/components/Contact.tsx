@@ -62,7 +62,7 @@ export default function Contact() {
                 href={href}
                 className="flex items-center gap-3 rounded-2xl border border-neutral-800 bg-neutral-900/60 p-4 text-neutral-300 transition hover:border-emerald-400/60 hover:bg-neutral-900 hover:text-white"
               >
-                <Icon size={20} className="text-emerald-400" />
+                {Icon ? <Icon size={20} className="text-emerald-400" /> : null}
                 <span>{label}</span>
               </a>
             ))}
