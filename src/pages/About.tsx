@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 // import Contact from "../components/Contact";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors duration-300">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="px-6 py-24">
         <div className="mx-auto max-w-5xl">
