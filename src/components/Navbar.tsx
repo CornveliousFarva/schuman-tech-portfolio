@@ -3,7 +3,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
-  const { theme, toggleTheme } = useTheme();
+  const theme = useTheme();
   const navigate = useNavigate();
 
   const scrollToSection = (id: string) => {
@@ -13,6 +13,11 @@ export default function Navbar() {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }, 100);
   };
+
+  function toggleTheme(): void {
+    theme === "dark" ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
+    window.location.reload();
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-emerald-500/20 bg-slate-950 text-white shadow-lg">
