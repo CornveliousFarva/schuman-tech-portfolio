@@ -10,7 +10,7 @@ export default function HeroSection() {
           </div>
 
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-emerald-400">
-            Gregory Schuman™
+            Greg Schuman™
           </p>
 
           <h1 className="mb-6 text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
