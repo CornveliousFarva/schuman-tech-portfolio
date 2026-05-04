@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-white text-neutral-900 transition-colors duration-300 dark:bg-neutral-950 dark:text-neutral-100">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
