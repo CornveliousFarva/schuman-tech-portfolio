@@ -1,4 +1,6 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Github } from "react-icons/fa";
+import { FaLinkedin } from 'react-icons/fa';
 
 const contactLinks = [
   {
@@ -9,17 +11,17 @@ const contactLinks = [
   {
     label: "LinkedIn",
     href: "https://linkedin.com/in/your-profile",
-    icon: Linkedin,
+    icon: FaLinkedin,
   },
   {
     label: "GitHub",
     href: "https://github.com/your-username",
-    icon: Github,
+    icon: FaGithub,
   },
   {
     label: "Resume",
     href: "/resume.pdf",
-    icon: FileText,
+    // icon: FileText,
   },
 ];
 

@@ -21,3 +21,11 @@ export default function Portfolio() {
     </div>
   );
 }
+
+// export default function Portfolio() {
+//   return (
+//     <div className="min-h-screen bg-neutral-950 p-10 text-white">
+//       <h1>Portfolio component is rendering</h1>
+//     </div>
+//   );
+// }
