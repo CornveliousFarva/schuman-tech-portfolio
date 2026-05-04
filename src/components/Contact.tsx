@@ -1,8 +1,15 @@
+import type { ComponentType } from "react";
 import { Mail } from "lucide-react";
-import { Github } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from 'react-icons/fa';
 
-const contactLinks = [
+type ContactLink = {
+  label: string;
+  href: string;
+  icon?: ComponentType<{ size?: number; className?: string }>;
+};
+
+const contactLinks: ContactLink[] = [
   {
     label: "Email",
     href: "mailto:your.email@example.com",
