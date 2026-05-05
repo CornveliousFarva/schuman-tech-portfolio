@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-5">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:greg.c.schuman@gmail.com"
             aria-label="Email"
             className="transition hover:text-emerald-600"
           >
@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/cornveliousfarva"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -32,7 +32,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/greg-schuman/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

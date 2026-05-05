@@ -1,6 +1,6 @@
 const projects = [
  {
-  title: "BanjoTab Builder",
+  title: "Banjo Tab Builder",
   description:
     "A web app that lets musicians create, edit, and organize custom banjo tablature.",
   stack: ["React", "TypeScript", "Tailwind CSS"],
