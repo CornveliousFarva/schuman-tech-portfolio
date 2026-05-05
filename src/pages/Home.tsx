@@ -1,27 +1,62 @@
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Services from "../components/Services";
+// import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import About from "../components/About";
+const services = [
+  {
+    title: "Security Documentation",
+    description:
+      "Clear, organized documentation for security policies, procedures, controls, and internal technical workflows.",
+  },
+  {
+    title: "Technical Writing",
+    description:
+      "User-friendly guides, SOPs, knowledge base articles, onboarding docs, and process documentation.",
+  },
+  {
+    title: "Cybersecurity Support",
+    description:
+      "Support with security awareness, risk documentation, compliance preparation, and secure process design.",
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      {<Hero />}
 
-      <section id="services" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-bold text-white">Services</h2>
-          <Services />
+      <section id="services" className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+            Services
+          </h2>
+          <p className="mt-3 text-slate-600 dark:text-slate-400">
+            Practical documentation and security support for teams that need clarity.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="rounded-2xl border border-emerald-500/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900"
+            >
+              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400">
+                {service.title}
+              </h3>
+
+              <p className="mt-4 text-slate-600 dark:text-slate-300">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-bold text-white">About</h2>
-          <About />
-      </section>
+      <About />
 
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-bold text-white">Contact</h2>
-          <Contact />
-      </section>
+      <Contact />
+
     </>
   );
 }
