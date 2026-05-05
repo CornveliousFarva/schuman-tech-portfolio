@@ -25,7 +25,7 @@ export default function Hero() {
 
           <div className="mb-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href="#projects"
+              href="#portfolio"
               className="rounded-xl bg-emerald-400 px-6 py-3 text-center font-medium text-neutral-950 transition hover:bg-emerald-300"
             >
               View Projects
