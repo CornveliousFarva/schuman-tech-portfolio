@@ -12,17 +12,17 @@ type ContactLink = {
 const contactLinks: ContactLink[] = [
   {
     label: "Email",
-    href: "mailto:your.email@example.com",
+    href: "mailto:greg.c.schuman@gmail.com",
     icon: Mail,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-profile",
+    href: "https://linkedin.com/in/greg-schuman",
     icon: FaLinkedin,
   },
   {
     label: "GitHub",
-    href: "https://github.com/your-username",
+    href: "https://github.com/cornveliousfarva",
     icon: FaGithub,
   },
   {
