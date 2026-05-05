@@ -1,4 +1,4 @@
-export default function HeroSection() {
+export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-neutral-950 px-6 py-28 text-neutral-100 sm:py-36">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(52,211,153,0.12),transparent_35%)]" />
