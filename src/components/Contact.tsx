@@ -115,7 +115,7 @@ export default function Contact() {
             <button
               type="button"
               onClick={copyEmail}
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 font-medium text-white transition hover:bg-emerald-700"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#1565C0] px-4 py-3 font-medium text-white transition hover:bg-[#1E88E5]"
             >
               {copied ? (
                 <>
