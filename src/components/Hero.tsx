@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-neutral-950 px-6 py-28 text-neutral-100 sm:py-36">
@@ -24,12 +26,12 @@ export default function Hero() {
           </p>
 
           <div className="mb-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#portfolio"
-              className="rounded-xl bg-emerald-400 px-6 py-3 text-center font-medium text-neutral-950 transition hover:bg-emerald-300"
-            >
-              View Projects
-            </a>
+            <Link
+  to="/portfolio"
+  className="rounded-xl bg-emerald-400 px-6 py-3 text-center font-medium text-neutral-950 transition hover:bg-emerald-300"
+>
+  View Projects
+</Link>
 
             <a
               href="#contact"
