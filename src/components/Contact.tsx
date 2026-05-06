@@ -93,8 +93,8 @@ export default function Contact() {
 
       <div className="grid gap-8 md:grid-cols-2">
         {/* Direct Contact */}
-        <div className="rounded-2xl border border-emerald-500/20 bg-white p-6 shadow-sm dark:bg-slate-900">
-          <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400">
+        <div className="rounded-2xl border border-[#1565C0]/20 bg-white p-6 shadow-sm dark:bg-slate-900">
+          <h3 className="text-xl font-semibold text-[#1565C0] dark:text-[#1E88E5]">
             Direct Contact
           </h3>
 
@@ -135,9 +135,9 @@ export default function Contact() {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="rounded-2xl border border-emerald-500/20 bg-white p-6 shadow-sm dark:bg-slate-900"
+          className="rounded-2xl border border-[#1565C0]/20 bg-white p-6 shadow-sm dark:bg-slate-900"
         >
-          <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400">
+          <h3 className="text-xl font-semibold text-[#1565C0] dark:text-[#1E88E5]">
             Send a Message
           </h3>
 
@@ -149,7 +149,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
+              className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#1565C0]/20 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
             />
 
             <input
@@ -159,7 +159,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
+              className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#1565C0]/20 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
             />
 
             <textarea
@@ -169,19 +169,19 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
+              className="w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#1565C0]/20 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
             />
 
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 font-medium text-white transition hover:bg-emerald-700"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#1565C0] px-4 py-3 font-medium text-white transition hover:bg-[#1E88E5]"
             >
               <Send size={18} />
               Send Message
             </button>
 
             {submitted && (
-              <p className="text-center text-sm text-emerald-600 dark:text-emerald-400">
+              <p className="text-center text-sm text-[#1565C0] dark:text-[#1E88E5]">
                 Message sent successfully.
               </p>
             )}
