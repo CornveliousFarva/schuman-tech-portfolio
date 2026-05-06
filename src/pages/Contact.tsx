@@ -10,7 +10,7 @@ export default function ContactPage() {
       <main className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 max-w-3xl">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-emerald-400">
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#1565C0]">
               Contact
             </p>
 
