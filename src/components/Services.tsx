@@ -58,9 +58,9 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6 transition duration-300 hover:border-emerald-400/50 hover:bg-neutral-900"
+              className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6 transition duration-300 hover:border-[#1565C0]/20 hover:bg-neutral-900"
             >
-              <div className="mb-5 h-1 w-12 rounded-full bg-emerald-400 transition-all duration-300 group-hover:w-20" />
+              <div className="mb-5 h-1 w-12 rounded-full bg-[#1565C0] transition-all duration-300 group-hover:w-20" />
 
               <h3 className="mb-4 text-xl font-semibold text-white">
                 {service.title}
