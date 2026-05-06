@@ -29,12 +29,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-emerald-500/20 bg-slate-950/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[#1565C0]/20 bg-white/90 backdrop-blur dark:bg-[#06142E]/95">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo / Brand */}
         <Link
           to="/"
-          className="text-lg font-bold text-emerald-400 transition hover:text-emerald-300"
+          className="text-lg font-bold tracking-wide text-[#06142E] transition hover:text-[#1565C0] dark:text-white dark:hover:text-[#1E88E5]"
         >
           Schuman Security Documentation
         </Link>
@@ -43,28 +43,28 @@ export default function Navbar() {
         <div className="flex items-center gap-5 text-sm">
           <button
             onClick={() => scrollToSection("services")}
-            className="text-slate-200 transition hover:text-emerald-400"
+            className="text-slate-200 transition hover:text-[#1E88E5]"
           >
             Services
           </button>
 
           <button
             onClick={() => scrollToSection("about")}
-            className="text-slate-200 transition hover:text-emerald-400"
+            className="text-slate-200 transition hover:text-[#1E88E5]"
           >
             About
           </button>
 
           <Link
             to="/portfolio"
-            className="text-slate-200 transition hover:text-emerald-400"
+            className="text-slate-200 transition hover:text-[#1E88E5]"
           >
             Portfolio
           </Link>
 
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-slate-200 transition hover:text-emerald-400"
+            className="text-slate-200 transition hover:text-[#1E88E5]"
           >
             Contact
           </button>
@@ -73,7 +73,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="rounded-lg border border-emerald-500/30 p-2 text-emerald-400 transition hover:bg-emerald-500/10"
+            className="rounded-lg border border-[#1565C0]/20 p-2 text-[#1565C0] transition hover:bg-[#1E88E5]-500/10"
             aria-label="Toggle dark mode"
           >
             {theme === "dark" ? (
