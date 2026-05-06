@@ -7,13 +7,14 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-6xl">
         <div className="max-w-3xl">
-          <div className="mb-6 inline-flex rounded-full border border-[#1565C0]/20 bg-[#1565C0]/10 px-4 py-2 text-sm text-[#1565C0]">
+          <p className="mb-6 inline-flex rounded-full border border-[#1565C0]/20 bg-white px-4 py-2 text-sm text-[#1565C0]">
+            Greg Schuman™
+          </p>
+          <div className="mb-6 inline-flex rounded-full border border-[#1565C0]/20 bg-white px-4 py-2 text-sm text-[#1565C0]">
             Available for IT Support • Documentation • Technical Projects
           </div>
 
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#1565C0]">
-            Greg Schuman™
-          </p>
+          
 
           <h1 className="mb-6 text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Clear systems. Reliable support. Thoughtful technical solutions.
