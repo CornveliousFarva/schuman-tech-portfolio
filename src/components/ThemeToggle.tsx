@@ -39,7 +39,7 @@ export default function ThemeToggle() {
     >
       <div className="transition duration-300 group-hover:rotate-12">
         {theme === "dark" ? (
-          <Sun size={18} className="text-emerald-400" />
+          <Sun size={18} className="text-[#1565C0]" />
         ) : (
           <Moon size={18} />
         )}
