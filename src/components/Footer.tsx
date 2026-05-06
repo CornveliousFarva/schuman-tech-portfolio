@@ -16,7 +16,7 @@ export default function Footer() {
           <a
             href="mailto:greg.c.schuman@gmail.com"
             aria-label="Email"
-            className="transition hover:text-emerald-600"
+            className="transition hover:text-[#1E88E5]"
           >
             <Mail size={20} />
           </a>
@@ -26,7 +26,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="transition hover:text-emerald-600"
+            className="transition hover:text-[#1E88E5]"
           >
             <SiGithub size={20} />
           </a>
@@ -36,7 +36,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="transition hover:text-emerald-600"
+            className="transition hover:text-[#1E88E5]"
           >
             <FaLinkedin size={20} />
           </a>
