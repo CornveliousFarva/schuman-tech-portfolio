@@ -11,7 +11,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl">
           {/* Header */}
           <div className="mb-20">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-emerald-400">
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#1565C0]">
               About
             </p>
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
           </section>
 
           {/* Philosophy */}
-          <section className="mb-24 border-l-2 border-emerald-400 pl-8">
+          <section className="mb-24 border-l-2 border-[#1565C0]/20 pl-8">
             <h2 className="mb-4 text-2xl font-semibold">
               Philosophy
             </h2>
@@ -109,7 +109,7 @@ export default function AboutPage() {
 
             <a
               href="#contact"
-              className="inline-flex rounded-xl bg-emerald-400 px-6 py-3 font-medium text-neutral-950 transition hover:bg-emerald-300"
+              className="inline-flex rounded-xl bg-[#1565C0] px-6 py-3 font-medium text-neutral-950 transition hover:bg-[#1E88E5]"
             >
               Get In Touch
             </a>

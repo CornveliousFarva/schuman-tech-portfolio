@@ -36,9 +36,9 @@ export default function Portfolio() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="rounded-2xl border border-emerald-500/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900"
+            className="rounded-2xl border border-[#1565C0]/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900"
           >
-            <h2 className="text-2xl font-semibold text-emerald-600 dark:text-emerald-400">
+            <h2 className="text-2xl font-semibold text-[#1565C0] dark:text-[#1E88E5]">
               {project.title}
             </h2>
 
@@ -57,7 +57,7 @@ export default function Portfolio() {
               {project.stack.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-emerald-500/30 px-3 py-1 text-xs text-emerald-600 dark:text-emerald-400"
+                  className="rounded-full border border-[#1565C0]/30 px-3 py-1 text-xs text-[#1565C0] dark:text-[#1E88E5]"
                 >
                   {tech}
                 </span>
@@ -69,7 +69,7 @@ export default function Portfolio() {
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+                className="text-sm font-medium text-[#1565C0] hover:underline dark:text-[#1E88E5]"
               >
                 Live Demo
               </a>
@@ -78,7 +78,7 @@ export default function Portfolio() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+                className="text-sm font-medium text-[#1565C0] hover:underline dark:text-[#1E88E5]"
               >
                 GitHub
               </a>

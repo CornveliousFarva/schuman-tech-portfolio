@@ -39,9 +39,9 @@ export default function Home() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-emerald-500/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900"
+              className="rounded-2xl border border-[#1565C0]/20 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900"
             >
-              <h3 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400">
+              <h3 className="text-xl font-semibold text-[#1565C0] dark:text-[#1E88E5]">
                 {service.title}
               </h3>
 
