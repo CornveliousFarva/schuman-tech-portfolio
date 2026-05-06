@@ -34,7 +34,7 @@ export default function AboutSection() {
     <section id="about" className="px-6 py-24 bg-neutral-950 text-neutral-100">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 max-w-3xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-emerald-400">
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#1565C0]">
             About
           </p>
 
@@ -65,7 +65,7 @@ export default function AboutSection() {
                 {area.description}
               </p>
 
-              <p className="border-l-2 border-emerald-400 pl-4 text-sm leading-6 text-neutral-300">
+              <p className="border-l-2 border-[#1565C0]/20 pl-4 text-sm leading-6 text-neutral-300">
                 {area.focus}
               </p>
             </div>
