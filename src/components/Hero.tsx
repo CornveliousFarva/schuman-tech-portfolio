@@ -7,11 +7,11 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-6xl">
         <div className="max-w-3xl">
-          <div className="mb-6 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-300">
+          <div className="mb-6 inline-flex rounded-full border border-[#1565C0]/20 bg-[#1565C0]/10 px-4 py-2 text-sm text-[#1565C0]">
             Available for IT Support • Documentation • Technical Projects
           </div>
 
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-emerald-400">
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#1565C0]">
             Greg Schuman™
           </p>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="mb-10 flex flex-col gap-4 sm:flex-row">
             <Link
   to="/portfolio"
-  className="rounded-xl bg-emerald-400 px-6 py-3 text-center font-medium text-neutral-950 transition hover:bg-emerald-300"
+  className="rounded-xl bg-[#1565C0] px-6 py-3 text-center font-medium text-neutral-950 transition hover:bg-[#1E88E5]"
 >
   View Projects
 </Link>
