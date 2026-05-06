@@ -39,7 +39,7 @@ export default function ServicesSection() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 max-w-3xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-emerald-400">
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#1565C0]">
             Services
           </p>
 
@@ -80,7 +80,7 @@ export default function ServicesSection() {
 
           <a
             href="#contact"
-            className="mt-3 inline-block text-emerald-400 transition hover:text-emerald-300"
+            className="mt-3 inline-block text-[#1565C0] transition hover:text-[#1E88E5]"
           >
             Let’s connect →
           </a>
