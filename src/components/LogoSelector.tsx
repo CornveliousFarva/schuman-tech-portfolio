@@ -11,8 +11,8 @@ export default function LogoSelector({
       className="group inline-flex items-center gap-3 transition"
     >
       {/* Logo Mark */}
-      <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/30 bg-emerald-400/10">
-        <span className="text-sm font-semibold text-emerald-400">GS</span>
+      <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#1565C0]/20 bg-[#1565C0]/10">
+        <span className="text-sm font-semibold text-[#1565C0]">GS</span>
       </div>
 
       {/* Logo Text */}
