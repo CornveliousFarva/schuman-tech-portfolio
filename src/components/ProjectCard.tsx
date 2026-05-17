@@ -1,13 +1,13 @@
 import ScreenshotCarousel from './ScreenshotCarousel'
 
 const screenshots = [
-  'public/images/pong/start-screen.png',
-  'public/images/pong/pong-classic.png',
-  'public/images/pong/australian-open.png',
-  'public/images/pong/french-open.png',
-  'public/images/pong/wimbledon.png',
-  'public/images/pong/win-screen.png',
-  'public/images/pong/us-open.png',
+  '/images/pong/pong-start-screen.png',
+  '/images/pong/pong-classic.png',
+  '/images/pong/pong-australian-open.png',
+  '/images/pong/pong-french-open.png',
+  '/images/pong/pong-wimbledon.png',
+  '/images/pong/pong-us-open.png',
+  '/images/pong/pong-win-screen.png',
 ]
 
 export default function ProjectCard({ project }: { project?: { github?: string } }) {
@@ -34,6 +34,8 @@ export default function ProjectCard({ project }: { project?: { github?: string }
   </a>
 )}
       <div className="mt-4 flex flex-wrap gap-2">
+
+        
         <span className="rounded bg-zinc-800 px-3 py-1 text-sm text-white">
           Python
         </span>
