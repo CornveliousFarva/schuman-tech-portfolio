@@ -17,7 +17,7 @@ type Project = {
 
 export default function ProjectCard({ project }: { project?: Project }) {
   return (
-    <div className="rounded-2xl bg-zinc-900 p-6 shadow-xl">
+    <div className="rounded-3xl bg-zinc-900 p-6 shadow-xl">
       <h2 className="mb-2 text-2xl font-bold text-white">
         Grand Slam Pong
       </h2>

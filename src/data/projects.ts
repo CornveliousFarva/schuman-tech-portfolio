@@ -7,7 +7,7 @@ const projects = [
     technologies: ['Python', 'Pygame', 'OOP'],
 
     images: [
-      '/images/pong/pongstart-screen.png',
+      '/images/pong/pong-start-screen.png',
       '/images/pong/pong-classic.png',
       '/images/pong/pong-australian-open.png',
       '/images/pong/pong-french-open.png',
