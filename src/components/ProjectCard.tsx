@@ -10,7 +10,12 @@ const screenshots = [
   '/images/pong/pong-win-screen.png',
 ]
 
-export default function ProjectCard({ project }: { project?: { github?: string } }) {
+type Project = {
+  github?: string
+  images?: string[]
+}
+
+export default function ProjectCard({ project }: { project?: Project }) {
   return (
     <div className="rounded-2xl bg-zinc-900 p-6 shadow-xl">
       <h2 className="mb-2 text-2xl font-bold text-white">
@@ -22,7 +27,7 @@ export default function ProjectCard({ project }: { project?: { github?: string }
         with Python and Pygame.
       </p>
 
-      <ScreenshotCarousel images={screenshots} />
+      <ScreenshotCarousel images={project?.images || screenshots} />
         {project?.github && (
   <a
     href={project.github}
